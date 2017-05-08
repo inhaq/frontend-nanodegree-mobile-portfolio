@@ -14,5 +14,4 @@ Header set Cache-Control “max-age=604800”
 Header set Cache-Control “max-age=86400”
 </FilesMatch>
 </IfModule>
-EXPIRES CACHING ##
-- See more at: http://shayarifrommyheart.myfsg.in/2016/06/12/fix-leverage-browser-caching/#sthash.ThMpJYGk.dpuf
+## EXPIRES CACHING ##
