@@ -25,7 +25,7 @@ Open index.html to launch this project.
 - Moved repeated calculation outside of the loop in updatePositions function
 - Added a scroll function to use the requestAnimationFrame API to optimize concurrent animations
 - Moved variable initialization before loop to improve performance
-- Calculating number of pizzas that should be displayed on screen dynamically
+- Calculate number of pizzas that should be displayed on screen dynamically
 
 
 ### Optimization Tips and Tricks
