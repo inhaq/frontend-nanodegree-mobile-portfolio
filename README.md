@@ -1,40 +1,32 @@
 ## Website Performance Optimization portfolio project
 
-Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
+In this project, I have optimize online portfolio for performance! In particular, optimize the CRP and make page render as fast as possible.
 
-To get started, check out the repository and inspect the code.
+Open index.html to launch this project.
+
+[Live Demo](http://inzi.me/frontend-nanodegree-mobile-portfolio/)
 
 ### Getting started
 
 #### Part 1: Optimize PageSpeed Insights score for index.html
 
-Some useful tips to help you get started:
-
-1. Check out the repository
-1. To inspect the site on your phone, you can run a local server
-
-  ```bash
-  $> cd /path/to/your-project-folder
-  $> python -m SimpleHTTPServer 8080
-  ```
-
-1. Open a browser and visit localhost:8080
-1. Download and install [ngrok](https://ngrok.com/) to the top-level of your project directory to make your local server accessible remotely.
-
-  ``` bash
-  $> cd /path/to/your-project-folder
-  $> ./ngrok http 8080
-  ```
-
-1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
-
-Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
+- Shift analytics code to the bottom index.html
+- Did inline styles
+- Google font optimisal approach
+- Add media for print query
+- Compressed/Convert-to-base64 and resized image
+- Load scripts asynchronously
 
 #### Part 2: Optimize Frames per Second in pizza.html
 
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
+- DOM element selectors getElementsbyClassName
+- Removed unwanted calculation from the ChangePizzaSizes loop
+- Removed determineDx function and optimised calculation
+- Moved repeated calculation outside of the loop in updatePositions function
+- Added a scroll function to use the requestAnimationFrame API to optimize concurrent animations
+- Moved variable initialization before loop to improve performance
+- Calculate number of pizzas that should be displayed on screen dynamically
 
-You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
 ### Optimization Tips and Tricks
 * [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
